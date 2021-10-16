@@ -33,4 +33,14 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
         assertEquals(6, stringCalculator.add("1\n2,3"));
  }
+    @Test
+	 public final void whenNegativeNumberIsUsedThenRuntimeExceptionIsThrown() {
+    	StringCalculator stringCalculator = new StringCalculator();
+		 RuntimeException exception = null;
+		    try {
+		        stringCalculator.add("3,-6,15,46,33");
+		    } catch (RuntimeException e) {
+		        exception = e;
+		    }
+    }
 }
