@@ -28,4 +28,9 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
         assertEquals(3+6+15+18+46+33, stringCalculator.add("3,6,15,18,46,33"));
  }
+    @Test
+    public final void newLineBetweenNumbers() {
+    	StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(6, stringCalculator.add("1\n2,3"));
+ }
 }
