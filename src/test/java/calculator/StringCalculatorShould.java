@@ -22,4 +22,10 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
 	    assertEquals(3+6, stringCalculator.add("3,6"));
 	}
+    
+    @Test
+    public final void whenAnyNumberOfNumbersIsUsedThenReturnValuesAreTheirSums() {
+    	StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(3+6+15+18+46+33, stringCalculator.add("3,6,15,18,46,33"));
+ }
 }
