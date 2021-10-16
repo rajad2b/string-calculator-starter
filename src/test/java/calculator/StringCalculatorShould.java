@@ -17,4 +17,10 @@ class StringCalculatorShould {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
     }
+    
+    @Test
+	public final void whenOneNumberIsUsedThenReturnValueIsThatSameNumber() {
+    	StringCalculator stringCalculator = new StringCalculator();
+	    assertEquals(3, stringCalculator.add("3"));
+	}
 }
