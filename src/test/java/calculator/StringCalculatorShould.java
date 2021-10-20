@@ -49,4 +49,12 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
 	     assertEquals(3+1000+6, stringCalculator.add("3,1000,1001,6,1234"));
 	 }
+    @Test
+    public void addNumber() {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(2 ,stringCalculator.add("E1,5,6"));
+    	assertEquals(3,stringCalculator.add("E1,5,6"));
+    	
+    }
+
 }

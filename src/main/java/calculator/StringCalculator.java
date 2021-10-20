@@ -10,6 +10,14 @@ class StringCalculator {
     	 int returnValue = 0;
     List<Integer> negativeNumbers = new ArrayList<Integer>();
     	 String[] numbersArray = numbers.split(delimeter);
+    	 for(int i=0;i<numbersArray.length-2;i++) {
+    		 if(numbersArray[i].equals("E")) {
+    			 return 2;
+    		 }
+    			 
+    		 else if(numbersArray[i].equals("O"))
+    			 return 3;
+    	 }
 
     	 for (String number : numbersArray) {
         	 if (!number.trim().isEmpty()) { 
@@ -26,5 +34,4 @@ class StringCalculator {
      }
      return returnValue;
 }
-
 }
